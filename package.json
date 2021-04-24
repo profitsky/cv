@@ -1,0 +1,43 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Curriculum vitae",
+  "main": "index.js",
+  "scripts": {
+    "prod": "webpack --config ./bundler/webpack.config.prod.js",
+    "dev": "webpack --config ./bundler/webpack.config.dev.js",
+    "start": "webpack serve --config ./bundler/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profitsky/cv.git"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "piotr zyskowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profitsky/cv/issues"
+  },
+  "homepage": "https://github.com/profitsky/cv#readme",
+  "browsersist": "> 0.5%",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  } 
+}
