@@ -26,6 +26,19 @@ module.exports = {
         use: "file-loader"
       },
 
+      { 
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: path.resolve(__dirname, "../", "dist/fonts")
+            }
+          }
+        ]
+      },
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -41,12 +54,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/template.html'),
       minify: true 
-    }),
+    }),   
 
     new CopyWebpackPlugin({
             patterns: [
                 { from: path.resolve(__dirname, '../static') }
-            ]
+            ]           
         }),
         
     new MiniCSSExtractPlugin({

@@ -1,0 +1,21 @@
+.page{
+    height: 1120px;
+    width: 792px;
+    margin: 0 auto ;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    border: 1px solid black;
+
+    &__about{
+        background-color: $color-yellow;        
+        flex-basis: 30%;
+    }
+
+    &__details{
+        background-color: $color-white;
+        flex-grow: 1;
+    }
+    
+}
