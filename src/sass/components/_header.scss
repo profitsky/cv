@@ -1,0 +1,31 @@
+.header{
+
+    height: 3.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 1rem;
+    
+    &__icon-container{
+        position: relative;
+        height: 100%;
+        width: 15%;
+    }
+
+    &__icon-afont{        
+        font-size: 4rem;
+        @include absCenter;
+        color: $color-yellow; 
+    }
+
+    &__text{
+        font-size: 2rem;
+        text-transform: uppercase;
+        background-color: $color-gray;
+        color: $color-white;
+        padding-left: 2rem;
+        padding-top: 0.7rem;      
+        flex-grow: 10;
+    }
+}

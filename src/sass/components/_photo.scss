@@ -1,22 +1,19 @@
 .photo{
     &__image{        
-        margin: 5rem auto 0 auto;
+        margin: 5rem auto;
         position: relative;
         background-image: url("/static/images/cvphoto.jpg");
         background-size: cover;
+        background-position: center;
         height: 16rem;
         width: 16rem;    
         border-radius: 50%;
 
             &::before{
             content: "";
-            position: absolute;
+            @include absCenter ;           
             height: 125%;
             width: 125%;
-            display: block;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background-color: transparent;
             border-radius: 50%;
             border: 1.2rem solid $color-white;

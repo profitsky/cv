@@ -10,12 +10,40 @@
 
     &__about{
         background-color: $color-yellow;        
-        flex-basis: 30%;
+        flex-basis: 32%;
     }
 
     &__details{
         background-color: $color-white;
         flex-grow: 1;
+    }    
+}
+
+.contact{
+    &__container{
+        display: flex;
+        flex-direction: column;
     }
-    
+}
+
+.hobbies{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.clousure{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile{
+    max-width: 52rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 2rem;    
 }
