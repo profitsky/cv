@@ -10,6 +10,7 @@ module.exports = merge(
           {
             open: true,
             contentBase: path.resolve(__dirname, "../", "static")
-          }
+          },
+    devtool: "source-map",
   }
 )

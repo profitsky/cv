@@ -18,7 +18,7 @@ module.exports = {
     rules:[
       {
         test: /\.s[ac]|c]ss$/i,
-        use: [MiniCSSExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [MiniCSSExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader" ]
       },
 
       {
@@ -49,6 +49,8 @@ module.exports = {
       },
     ]
   },
+
+  
   
   plugins: [  
     new HtmlWebpackPlugin({
